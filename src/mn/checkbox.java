@@ -1,4 +1,4 @@
-package asd;
+package mn;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,7 +16,6 @@ public class checkbox extends HttpServlet {
         String title = "Reading Checkbox Data";
         String docType=
                 "<!doctype html>\n";
-
         out.println(docType +
                 "<html>\n" +
                 "<head><title>" + title + "</title></head>\n"+
@@ -27,8 +26,6 @@ public class checkbox extends HttpServlet {
                 + req.getParameter( "maths") + "\n" +
                 "<li><b>Physics Flag</b>: "
                 +req.getParameter( "physics") + "\n" +
-                "<li><b>Chemistry Flag</b>: "
-                +req.getParameter( "chemistry") + "\n" +
                 "</ul>\n" +
                 "</body>\n" +
                 "</html>");
